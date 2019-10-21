@@ -12,7 +12,6 @@
 */
 
 Route::get('/', function () {
-
     $name = 'Deki';
     $age = 18;
 
