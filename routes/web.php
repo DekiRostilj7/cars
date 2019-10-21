@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     $name = 'Deki';
-    $age = 18;
+    $age = 19;
 
     return view('welcome', compact('name', 'age'));
 });

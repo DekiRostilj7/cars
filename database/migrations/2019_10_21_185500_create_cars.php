@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTableCars extends Migration
+class CreateCars extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateTableCars extends Migration
      */
     public function up()
     {
-        Schema::create('table_cars', function (Blueprint $table) {
+        Schema::create('cars', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('producer');
@@ -28,6 +28,6 @@ class CreateTableCars extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_cars');
+        Schema::dropIfExists('cars');
     }
 }
